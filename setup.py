@@ -1,13 +1,11 @@
 from __future__ import with_statement, print_function, absolute_import
 
-from setuptools import setup, find_packages, Extension
-from distutils.version import LooseVersion
-
+import numpy
 import sys
 from glob import glob
 from os.path import join
-import numpy
 
+from setuptools import setup, find_packages, Extension
 from setuptools.command.build_ext import build_ext
 
 
@@ -26,7 +24,7 @@ ext_modules = [
 
 kwargs = {"encoding": "utf-8"} if int(sys.version[0]) > 2 else {}
 setup(
-    name="pyworld",
+    name="pyworld-prebuilt",
     description="PyWorld: a Python wrapper for WORLD vocoder",
     long_description=open("README.md", "r", **kwargs).read(),
     long_description_content_type="text/markdown",
@@ -47,7 +45,7 @@ setup(
     },
     author="Pyworld Contributors",
     author_email="jeremycchsu@gmail.com",
-    url="https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder",
+    url="https://github.com/tsukumijima/pyworld-prebuilt",
     keywords=['vocoder'],
     classifiers=[],
 )

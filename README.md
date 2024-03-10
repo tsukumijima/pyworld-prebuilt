@@ -1,12 +1,8 @@
-# PyWORLD - A Python wrapper of WORLD Vocoder
+# pyworld-prebuilt - A Python wrapper of WORLD Vocoder
 
-
-| **`Linux`** | **`Windows`** |
-|-----------------|-----------|
-| [![Build Status](https://app.travis-ci.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder.svg?branch=master)](https://app.travis-ci.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder) | [![Build Status](https://ci.appveyor.com/api/projects/status/github/JeremyCCHsu/Python-Wrapper-for-World-Vocoder?svg=true)](https://ci.appveyor.com/project/JeremyCCHsu/python-wrapper-for-world-vocoder) |
-
-
-
+> [!TIP]  
+> This is a prebuilt version of [pyworld](https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder) for multiple platforms.  
+> There are no differences from pyworld except for some migration from some deprecated APIs and the addition of type hints.
 
 WORLD Vocoder is a fast and high-quality vocoder
 which parameterizes speech into three components:
@@ -48,14 +44,14 @@ See more info using `help`.
 
 ## Installation
 
-### Using Pip
-`pip install pyworld`
+### Using pip
+`pip install pyworld-prebuilt`
 <br/>
 
 ### Building from Source
 ```bash
-git clone https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder.git
-cd Python-Wrapper-for-World-Vocoder
+git clone https://github.com/tsukumijima/pyworld-prebuilt.git
+cd pyworld-prebuilt
 git submodule update --init
 pip install -U pip
 pip install -r requirements.txt
@@ -72,7 +68,7 @@ cd demo
 python demo.py
 ```
 to see if you get results in `test/` direcotry.
-(Please avoid writing and executing codes in the `Python-Wrapper-for-World-Vocoder` folder for now.)<br/>
+(Please avoid writing and executing codes in the `pyworld-prebuilt` folder for now.)<br/>
 
 ### Environment/Dependencies
 - Operating systems
@@ -125,7 +121,7 @@ You can install dependencies these by `pip install -r requirements.txt`
 
 
 ### Other Installation Suggestions
-1. Use `pip install .` is safer and you can easily uninstall pyworld by `pip uninstall pyworld`
+1. Use `pip install .` is safer and you can easily uninstall pyworld by `pip uninstall pyworld-prebuilt`
   - For Mac users: You might need to do `MACOSX_DEPLOYMENT_TARGET=10.9 pip install .` See [issue](https://github.com/SeanNaren/warp-ctc/issues/129#issuecomment-502349652).
 2. Another way to install pyworld is via<br/>
    `python setup.py install`<br/>
