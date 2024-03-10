@@ -42,7 +42,7 @@ jobs:
       - name: Upload Wheels to artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cibuildwheel-wheels
+          name: cibuildwheel-wheels-${{ runner.os }}
           path: wheelhouse
 
   build_sdist:
