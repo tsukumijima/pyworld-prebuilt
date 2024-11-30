@@ -32,7 +32,10 @@ setup(
     cmdclass={'build_ext': build_ext},
     version=_VERSION,
     packages=find_packages(),
-    install_requires=['numpy'],
+    install_requires=[
+        "importlib_resources; python_version<'3.9'",
+        "numpy>=1.0",
+    ],
     extras_require={
         'test': ['nose'],
         'sdist': ['numpy', 'cython>=0.24'],
