@@ -16,6 +16,6 @@ if sys.version_info >= (3, 8):
 else:
     from importlib_metadata import version
 
-__version__ = version('pyworld')
+__version__ = version('pyworld-prebuilt')
 
 from .pyworld import *
