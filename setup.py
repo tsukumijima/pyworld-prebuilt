@@ -9,7 +9,7 @@ from setuptools import Extension, find_packages, setup
 from setuptools.command.build_ext import build_ext
 
 
-_VERSION = '0.3.4.1'
+_VERSION = '0.3.4.2'
 
 
 world_src_top = join("lib", "World", "src")
@@ -38,7 +38,7 @@ setup(
     ],
     extras_require={
         'test': ['nose'],
-        'sdist': ['numpy', 'cython>=0.24'],
+        'sdist': ['numpy', 'cython>=3.0'],
     },
     author="Pyworld Contributors",
     author_email="jeremycchsu@gmail.com",
