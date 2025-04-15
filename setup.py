@@ -9,7 +9,7 @@ from setuptools import Extension, find_packages, setup
 from setuptools.command.build_ext import build_ext
 
 
-_VERSION = '0.3.4.4'
+_VERSION = '0.3.5-post1'
 
 
 world_src_top = join("lib", "World", "src")
@@ -32,10 +32,7 @@ setup(
     cmdclass={'build_ext': build_ext},
     version=_VERSION,
     packages=find_packages(),
-    install_requires=[
-        "importlib_resources; python_version<'3.9'",
-        "numpy>=1.0",
-    ],
+    install_requires=['numpy'],
     extras_require={
         'test': ['nose'],
         'sdist': ['numpy', 'cython>=3.0'],
